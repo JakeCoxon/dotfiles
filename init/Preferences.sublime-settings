@@ -1,0 +1,10 @@
+{
+    "font_size": 11,
+
+    "line_padding_top": 2,
+    "line_padding_bottom": 2,
+    
+    "bold_folder_labels": true,
+
+    "translate_tabs_to_spaces": true
+}

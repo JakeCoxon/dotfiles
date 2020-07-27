@@ -1,0 +1,217 @@
+{
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "blink",
+  "files.trimFinalNewlines": true,
+  "editor.acceptSuggestionOnEnter": "off",
+
+  "editor.formatOnPaste": false,
+
+  "python.venvPath": "/Users/jake/.virtualenvs/",
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["--reuse-db"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--max-line-length=120"],
+  "python.linting.pylintArgs": ["--disable=C0111", "--disable=D100"],
+  "python.linting.pylintEnabled": false,
+  "[python]": {
+    "editor.formatOnSave": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+
+  "problems.decorations.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": -1,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "terminal.integrated.fontSize": 10,
+  "search.location": "panel",
+  "editor.tabSize": 2,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "workbench.editor.enablePreview": false,
+  // Only open a file when double clicking
+  "workbench.list.openMode": "doubleClick",
+  // Don't automatically reveal the file in the sidebar
+  // Right click on tab and click reveal to do so manually
+  "explorer.autoReveal": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.menus": {
+    "editor": {
+      "blame": false,
+      "clipboard": false,
+      "compare": false,
+      "details": false,
+      "history": false,
+      "remote": false
+    },
+    "editorGroup": {
+      "blame": false,
+      "compare": false
+    },
+    "editorTab": {
+      "clipboard": false,
+      "compare": false,
+      "history": false,
+      "remote": false
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true,
+      "stashInline": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true,
+      "stash": true
+    }
+  },
+
+  // Dock the floating toolbar in the debug view
+  "debug.toolBarLocation": "docked",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "postfix.customTemplates": [
+    {
+      "name": "par",
+      "description": "Parenthesis",
+      "body": "({{expr}})",
+      "when": [
+        "binary-expression",
+        "expression",
+        "function-call",
+        "unary-expression"
+      ]
+    }
+  ],
+  // "emeraldwalk.runonsave": {
+  //   "commands": [
+  //     {
+  //       "match": "\\.py",
+  //       "isAsync": false,
+  //       "cmd": "$HOME/.virtualenvs/zego/bin/isort '${file}'"
+  //     }
+  //   ]
+  // },
+  "materialTheme.fixIconsRunning": false,
+  "python.jediEnabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.enable": true,
+  "eslint.packageManager": "yarn",
+  "search.collapseResults": "alwaysExpand",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.editor.showTabs": true,
+  "workbench.activityBar.visible": true,
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "flow.useNPMPackagedFlow": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.cursorWidth": 3,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderControlCharacters": false,
+  "editor.lineHeight": 19,
+  "browser-preview.format": "png",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "workbench.panel.defaultLocation": "right",
+  "workbench.colorTheme": "Horizon",
+  "workbench.colorCustomizations": {
+    "[Horizon]": {
+      "editor.selectionBackground": "#383b56",
+      "sideBar.border": "#2E303E"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Horizon]": {
+      "comments": "#21BFC2cc",
+      "textMateRules": [
+        {
+          "scope": "variable.parameter.function.python",
+          "settings": {
+            "foreground": "#e67f7fee"
+          }
+        }
+      ]
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.renderWhitespace": "selection",
+  "python.terminal.activateEnvironment": false,
+  "git.openDiffOnClick": false
+}

@@ -4,8 +4,6 @@
   "files.trimFinalNewlines": true,
   "editor.acceptSuggestionOnEnter": "off",
 
-  "editor.formatOnPaste": false,
-
   "python.venvPath": "/Users/jake/.virtualenvs/",
   "python.testing.pytestEnabled": true,
   "python.testing.pytestArgs": ["--reuse-db"],
@@ -21,12 +19,10 @@
 
   "problems.decorations.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": -1,
   "files.associations": {
     "*.css": "postcss"
   },
   "terminal.integrated.fontSize": 10,
-  "search.location": "panel",
   "editor.tabSize": 2,
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
@@ -82,10 +78,6 @@
 
   // Dock the floating toolbar in the debug view
   "debug.toolBarLocation": "docked",
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "postfix.customTemplates": [
     {
       "name": "par",
@@ -205,7 +197,12 @@
       ]
     }
   },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
@@ -213,5 +210,22 @@
   },
   "editor.renderWhitespace": "selection",
   "python.terminal.activateEnvironment": false,
-  "git.openDiffOnClick": false
+  "git.openDiffOnClick": false,
+
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.autocomplete": "Disabled",
+  "C_Cpp.dimInactiveRegions": false,
+  "C_Cpp.errorSquiggles": "Disabled",
+  "[cpp]": {},
+  "python.languageServer": "Microsoft",
+  "python.linting.enabled": false,
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": -1,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "terminal.integrated.tabs.enabled": false
 }

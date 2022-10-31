@@ -3,6 +3,7 @@
   "editor.cursorBlinking": "blink",
   "files.trimFinalNewlines": true,
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.bracketPairColorization.enabled": false,
 
   "python.venvPath": "/Users/jake/.virtualenvs/",
   "python.testing.pytestEnabled": true,
@@ -29,9 +30,6 @@
   },
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "workbench.editor.enablePreview": false,
-  // Only open a file when double clicking
-  "workbench.list.openMode": "doubleClick",
   // Don't automatically reveal the file in the sidebar
   // Right click on tab and click reveal to do so manually
   "explorer.autoReveal": false,
@@ -108,9 +106,9 @@
   "search.collapseResults": "alwaysExpand",
   "editor.multiCursorModifier": "ctrlCmd",
   "workbench.editor.showTabs": true,
-  "workbench.activityBar.visible": true,
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
   "typescript.disableAutomaticTypeAcquisition": true,
   "flow.useNPMPackagedFlow": true,
   "editor.minimap.enabled": false,
@@ -176,7 +174,6 @@
       "value": "#42b883"
     }
   ],
-  "workbench.panel.defaultLocation": "right",
   "workbench.colorTheme": "Horizon",
   "workbench.colorCustomizations": {
     "[Horizon]": {
@@ -205,6 +202,18 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -219,13 +228,22 @@
   "[cpp]": {},
   "python.languageServer": "Microsoft",
   "python.linting.enabled": false,
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "window.zoomLevel": -1,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "terminal.integrated.tabs.enabled": false
+  "[d]": {
+    "editor.tabSize": 4,
+  },
+  "terminal.integrated.tabs.enabled": false,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.editor.highlightModifiedTabs": true,
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "d.dubCompiler": "dmd",
+  "d.stdlibPath": "auto",
+  "d.dubPath": "/usr/local/bin/dub",
+  "d.servedPath": "/Users/jakecoxon/.vscode/extensions/webfreak.code-d-0.23.2/bin/serve-d",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": -1,
 }

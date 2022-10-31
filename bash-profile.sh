@@ -24,6 +24,7 @@ function ll () { CLICOLOR_FORCE=true ls -lahG "$@" | sort -k 1.1,1.1r -k 9 -f | 
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.nimble/bin:$PATH"
+export PATH="/Library/D/ldc/bin:$PATH"
 
 alias hh=hstr                    # hh to be alias for hstr
 export HSTR_CONFIG=hicolor       # get more colors

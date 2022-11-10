@@ -22,7 +22,6 @@ defaults write -g KeyRepeat -int 1
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 
-
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
@@ -47,5 +46,14 @@ defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -boo
 
 ## Sublime Text ####################
 
-cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings
-cp -r init/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Default\ \(OSX\).sublime-keymap
+#cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings
+#cp -r init/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Default\ \(OSX\).sublime-keymap
+
+## Keyboard shortcuts
+
+# Swap command and option on specific keyboards
+# https://nicklafferty.com/blog/how-to-swap-option-and-command-keys-on-macos-catalina/
+
+# ` instead of § 
+# https://superuser.com/questions/37042/remapping-of-keys-in-mac-os-x
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035}]}'

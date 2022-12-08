@@ -23,3 +23,15 @@ setopt prompt_subst
 PROMPT=$'\n''%F{yellow}%~%f $(git_branch_name)'$'\n''$ '
 
 export PATH="/Library/D/ldc/bin:$PATH"
+# pnpm
+export PNPM_HOME="/Users/jake/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+export PATH="/Users/jake/Library/Python/3.9/bin:$PATH"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+function ll {
+  cd "$(llama "$@")"
+}

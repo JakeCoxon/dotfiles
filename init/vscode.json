@@ -245,5 +245,6 @@
   "d.dubPath": "/usr/local/bin/dub",
   "d.servedPath": "/Users/jakecoxon/.vscode/extensions/webfreak.code-d-0.23.2/bin/serve-d",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.autoIndent": "advanced",
   "window.zoomLevel": -1,
 }

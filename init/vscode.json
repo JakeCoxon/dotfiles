@@ -82,6 +82,7 @@
       "description": "Parenthesis",
       "body": "({{expr}})",
       "when": [
+        "identifier",
         "binary-expression",
         "expression",
         "function-call",
@@ -105,7 +106,7 @@
   "eslint.packageManager": "yarn",
   "search.collapseResults": "alwaysExpand",
   "editor.multiCursorModifier": "ctrlCmd",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
@@ -174,7 +175,6 @@
       "value": "#42b883"
     }
   ],
-  "workbench.colorTheme": "Horizon",
   "workbench.colorCustomizations": {
     "[Horizon]": {
       "editor.selectionBackground": "#383b56",
@@ -192,31 +192,31 @@
           }
         }
       ]
-    }
+    },
   },
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "[javascript]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[scss]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescriptreact]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascriptreact]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[json]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "editor.renderWhitespace": "selection",
   "python.terminal.activateEnvironment": false,
   "git.openDiffOnClick": false,
@@ -226,7 +226,7 @@
   "C_Cpp.dimInactiveRegions": false,
   "C_Cpp.errorSquiggles": "Disabled",
   "[cpp]": {},
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "python.linting.enabled": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
@@ -246,5 +246,17 @@
   "d.servedPath": "/Users/jakecoxon/.vscode/extensions/webfreak.code-d-0.23.2/bin/serve-d",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.autoIndent": "advanced",
-  "window.zoomLevel": -1,
+  "editor.stickyScroll.enabled": true,
+  "workbench.editor.navigationScope": "editorGroup",
+  "inline-parameters.enabled": false,
+  "parameterHints.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Monokai Darker Reloaded",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.advanced": {},
 }

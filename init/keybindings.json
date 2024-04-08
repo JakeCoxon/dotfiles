@@ -83,5 +83,15 @@
   {
     "key": "cmd+k cmd+right",
     "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "workbench.action.gotoSymbol",
+    "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol",
+    "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
   }
 ]

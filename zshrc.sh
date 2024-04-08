@@ -27,6 +27,7 @@ export PATH="/Library/D/ldc/bin:$PATH"
 export PNPM_HOME="/Users/jake/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+export PATH="$(npm config get prefix):$PATH"
 
 export PATH="/Users/jake/Library/Python/3.9/bin:$PATH"
 
@@ -35,3 +36,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 function ll {
   cd "$(llama "$@")"
 }
+
+# bun completions
+[ -s "/Users/jake/.bun/_bun" ] && source "/Users/jake/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Created by `pipx` on 2024-03-04 10:47:57
+export PATH="$PATH:/Users/jake/.local/bin"

@@ -33,9 +33,6 @@ export PATH="/Users/jake/Library/Python/3.9/bin:$PATH"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-function ll {
-  cd "$(llama "$@")"
-}
 
 # bun completions
 [ -s "/Users/jake/.bun/_bun" ] && source "/Users/jake/.bun/_bun"
@@ -46,3 +43,19 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Created by `pipx` on 2024-03-04 10:47:57
 export PATH="$PATH:/Users/jake/.local/bin"
+
+function chatgpt() {
+  local output=$( (cd /Users/jake/Dev/chatgpt-cli/ && bun script.ts "$@") )
+
+  if [[ $? -eq 0 ]]; then
+    print -z $output
+  fi
+}
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+source /Users/jake/.config/broot/launcher/bash/br
+
+# opencode
+export PATH=/Users/jake/.opencode/bin:$PATH

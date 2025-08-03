@@ -112,7 +112,6 @@
   "typescript.autoClosingTags": false,
   "typescript.disableAutomaticTypeAcquisition": true,
   "flow.useNPMPackagedFlow": true,
-  "editor.minimap.enabled": false,
   "breadcrumbs.enabled": true,
   "editor.cursorWidth": 3,
   "editor.minimap.renderCharacters": false,
@@ -259,4 +258,21 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "github.copilot.advanced": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.editor.enableCodeActions": false, // copilot icon...
+  "editor.lightbulb.enabled": "off",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingDelete": "never",
+  "editor.autoClosingQuotes": "never",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.minimap.enabled": false,
+  "terminal.integrated.enablePersistentSessions": false,
+  "workbench.layoutControl.enabled": false
 }
